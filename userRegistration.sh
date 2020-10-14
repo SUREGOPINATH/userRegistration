@@ -27,6 +27,7 @@ function name() {
 function userRegistration() {
 
    name;
+	name;
 
 }
 
