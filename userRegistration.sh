@@ -15,6 +15,20 @@ function validation() {
 
 }
 
+function mobile() {
+
+	echo "Enter Mobile number"
+	read mobile
+	mobilePattern="^[0-9]{2}[ ][0-9]{10}$"
+	if [[ $mobile =~ $mobilePattern ]]
+   then
+      echo "valid"
+   else
+      echo "invalid"
+   fi
+
+}
+
 function email() {
 
    echo "Enter the Email Id"
@@ -38,6 +52,7 @@ function userRegistration() {
    name;
 	name;
 	email;
+	mobile;
 
 }
 
