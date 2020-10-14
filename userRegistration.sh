@@ -15,6 +15,15 @@ function validation() {
 
 }
 
+function email() {
+
+   echo "Enter the Email Id"
+   read email
+   emailpattern="^[0-9a-zA-Z]+([._+-][a-zA-Z0-9]+)?@[a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$"
+   validation $email $emailpattern
+
+}
+
 function name() {
 
    echo "Enter the name"
@@ -28,6 +37,7 @@ function userRegistration() {
 
    name;
 	name;
+	email;
 
 }
 
