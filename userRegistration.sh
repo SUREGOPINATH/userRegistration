@@ -15,6 +15,14 @@ function validation() {
 
 }
 
+function password() {
+
+	echo "Enter the password"
+   read password
+   passwordPattern="^[a-zA-Z]{8,}$"
+   validation $password $passwordPattern
+
+}
 function mobile() {
 
 	echo "Enter Mobile number"
@@ -49,10 +57,11 @@ function name() {
 
 function userRegistration() {
 
-   name;
-	name;
-	email;
-	mobile;
+   ##name;
+	##name;
+	##email;
+	##mobile;
+	password;
 
 }
 
