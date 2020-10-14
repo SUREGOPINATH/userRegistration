@@ -17,7 +17,7 @@ function validation() {
 
 function name() {
 
-   echo "Enter the first name"
+   echo "Enter the name"
    read name
    namePattern="^[[:upper:]]([[:lower:]]{3,})$"
    validation $name $namePattern
